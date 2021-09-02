@@ -98,14 +98,18 @@ class Results extends React.Component {
     }
 
     findWine1() {   
+        // eslint-disable-next-line
         this.state.chosenAnswers = this.props.location.state;
+        // eslint-disable-next-line
         this.state.finishedQuiz = this.props.finishedQuiz;
         if (!this.state.chosenAnswers) {
+            // eslint-disable-next-line
             this.state.finishedQuiz = false;
             return;
         }
         this.state.expense = this.state.chosenAnswers.chosenAnswers[0].answer;
 
+        // eslint-disable-next-line
         var answers = this.state.chosenAnswers;
         quizAns = this.state.chosenAnswers;
         switch (answers.chosenAnswers[1].answer) {
