@@ -107,6 +107,7 @@ class Results extends React.Component {
             this.state.finishedQuiz = false;
             return;
         }
+        // eslint-disable-next-line
         this.state.expense = this.state.chosenAnswers.chosenAnswers[0].answer;
 
         // eslint-disable-next-line
